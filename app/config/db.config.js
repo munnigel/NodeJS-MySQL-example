@@ -1,6 +1,9 @@
+// connecting to mysql database
+
 module.exports = {
-  HOST: "localhost",
+  HOST: "127.0.0.1",
   USER: "root",
-  PASSWORD: "123456",
-  DB: "testdb"
+  PASSWORD: "password",
+  DB: "nodejs_tutorials",
+  port: '3306',
 };

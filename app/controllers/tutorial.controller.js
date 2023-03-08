@@ -1,4 +1,5 @@
 const Tutorial = require("../models/tutorial.model.js");
+// controller uses model to create, find, update, delete data
 
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
