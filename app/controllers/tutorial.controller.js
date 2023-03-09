@@ -1,4 +1,5 @@
 const Tutorial = require("../models/tutorial.model.js");
+
 // controller uses model to create, find, update, delete data
 
 // Create and Save a new Tutorial
@@ -9,7 +10,6 @@ exports.create = (req, res) => {
       message: "Content can not be empty!"
     });
   }
-
   // Create a Tutorial
   const tutorial = new Tutorial({
     title: req.body.title,

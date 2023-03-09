@@ -1,5 +1,7 @@
 # Node.js Rest APIs with Express & MySQL example
 
+Use MySQL from Dockerhub, with port 3306, and root password="password"
+
 
 For instruction, please visit:
 > [Build Node.js Rest APIs with Express & MySQL](https://www.bezkoder.com/node-js-rest-api-express-mysql/)

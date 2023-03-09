@@ -25,5 +25,6 @@ module.exports = app => {
   // Delete all Tutorials
   router.delete("/", tutorials.deleteAll);
 
-  app.use('/api/tutorials', router);
+  // endpoint must include /api in front
+  app.use('/api', router);
 };

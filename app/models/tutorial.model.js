@@ -2,11 +2,12 @@ const sql = require("./db.js");
 
 // constructor
 // Tutorial model contains title, description, published. Tutorial in input is a JSON object from controller.
-const Tutorial = (tutorial) => {
+const Tutorial = function (tutorial) {
   this.title = tutorial.title;
   this.description = tutorial.description;
   this.published = tutorial.published;
 };
+
 
 Tutorial.create = (newTutorial, result) => {
   sql.query("INSERT INTO tutorials SET ?", newTutorial, (err, res) => {
